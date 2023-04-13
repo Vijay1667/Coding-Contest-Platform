@@ -1,0 +1,13 @@
+onChange :
+    function handleChange(event){
+        console.log(event.target.value)
+    }
+
+onSubmit :
+    <form onSubmit={handleSubmit}>
+    ...
+    </form>
+    function handleSubmit(event){
+        validate(value)
+        event.preventDefault();
+    }
